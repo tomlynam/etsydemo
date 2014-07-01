@@ -8,7 +8,7 @@ listing =
       if $('input').length > 6
         $('input[type=submit]').attr('disabled', true)
         Stripe.bankAccount.createToken($('#new_listing'), listing.handleStripeResponse)
-        false
+        false        
 
   handleStripeResponse: (status, response) ->
     if status == 200
